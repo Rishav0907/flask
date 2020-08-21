@@ -1,0 +1,14 @@
+<h1>Welcome</h1>
+<p>
+    {% if os_name %}
+        <h3>The OS Name you entered is {{os_name}}</h3>
+    {% else %}
+        <h3>Sorry but an error occurred</h3>
+    {% endif %}
+
+    <form method="POST">
+        {{forms.hidden_tag()}}
+        {{forms.os_name.label}} {{forms.os_name()}}
+        {{forms.submit()}}
+    </form>
+</p>

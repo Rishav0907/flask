@@ -1,0 +1,14 @@
+<h1>Welcome to the tech survey</h1>
+
+<form method='post'>
+    {{form.hidden_tag()}}
+    {{form.operating_system.label}}{{form.operating_system}}
+    <br>
+    {{form.coding.label}}{{form.coding}}
+    <br>
+    {{form.laptop.label}}{{form.laptop}}
+    <br>
+    {{form.feedback.label}}{{form.feedback}}
+    <br>
+    {{form.submit()}}
+</form>
